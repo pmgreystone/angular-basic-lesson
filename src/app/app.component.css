@@ -1,0 +1,37 @@
+:host {
+  --content-background-color: rgba(172, 255, 47, 0.9);
+}
+:host {
+  --content-padding: 10px;
+}
+header {
+  display: block;
+  height: 60px;
+  padding: var(--content-padding);
+  box-shadow: 0px 5px 25px var(--shadow-color);
+}
+.content {
+  padding: var(--content-padding);
+}
+/*
+#app-div-wrapper {
+  width: 90vw;
+  height: 90vh;
+  background-color: var(--content-background-color);
+  margin: auto auto;
+  box-sizing: border-box;
+  padding: 10px;
+  position: relative;
+  top: 5vh;
+  border-radius: 6px;
+}
+#app-div {
+  width: 100%;
+  height: 100%;
+  margin: auto auto;
+  box-sizing: border-box;
+  padding: 0;
+  position: relative;
+  overflow-y: auto;
+}
+*/
