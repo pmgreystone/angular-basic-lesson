@@ -1,0 +1,6 @@
+<div id="two_way_binding_example">
+    <h2>two-way-binding-example</h2>
+    <input type="text" name="input_abc" [(ngModel)]="username"/>
+    <div [innerText]="username"></div>
+    <input id="show_input" type="button" (click)="showInput()" value="show input" />
+</div>
