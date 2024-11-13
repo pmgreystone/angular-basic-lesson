@@ -10,5 +10,5 @@ import { FormsModule } from '@angular/forms';
 })
 export class InputColorComponent {
   inputColor: String = 'blue'
-  
+  inputColorDisabled: Boolean = false
 }
