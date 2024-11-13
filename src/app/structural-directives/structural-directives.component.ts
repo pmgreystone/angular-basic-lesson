@@ -22,9 +22,9 @@ class CourseSetting implements Setting {
 }
 
 @Component({
-  selector: 'structural-directives',
+  selector: 'app-structural-directives',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './structural-directives.component.html',
   styleUrl: './structural-directives.component.css'
 })
