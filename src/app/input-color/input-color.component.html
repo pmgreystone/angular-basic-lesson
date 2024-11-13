@@ -1,0 +1,6 @@
+<div id="wrapper">
+    <h2>input color demo</h2>
+    <div [style.backgroundColor]="inputColor" id="square"></div>
+    <input type="text" name="inputColor" [(ngModel)]="inputColor" [disabled]="inputColorDisabled.toString()" />
+    <input type="checkbox" name="inputColorDisabled" [(ngModel)]="inputColorDisabled" />
+</div>
