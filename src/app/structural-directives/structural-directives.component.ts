@@ -22,13 +22,13 @@ class CourseSetting implements Setting {
 }
 
 @Component({
-  selector: 'structural-directives-component',
+  selector: 'structural-directives',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './structural-directives-component.component.html',
-  styleUrl: './structural-directives-component.component.css'
+  templateUrl: './structural-directives.component.html',
+  styleUrl: './structural-directives.component.css'
 })
-export class StructuralDirectivesComponentComponent {
+export class StructuralDirectivesComponent {
   isAdmin: Boolean = true;
   settings: Setting[] = [
     new ClassroomSetting("add student"),
