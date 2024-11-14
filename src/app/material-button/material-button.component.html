@@ -1,0 +1,25 @@
+<div id="wrapper">
+    <hr/>
+    <button mat-icon-button><mat-icon>home</mat-icon></button>
+    <button mat-fab><mat-icon>home</mat-icon></button>
+    <button (click)="buttonClicked($event)" mat-raised-button color="primary" class="flex-button">
+        <mat-icon color="accent">favorite</mat-icon>
+        <span class="button-text">follow</span>
+    </button>
+    <button (click)="buttonClicked($event)" mat-raised-button color="primary" class="flex-button">
+        <mat-icon color="white">favorite</mat-icon>
+        <span class="button-text">follow</span>
+    </button>
+    <hr/>
+    <button mat-button>basic</button>
+    <button mat-button disabled>basic grey</button>
+    <a mat-button href="https://www.google.com/" target="_blank">google</a>
+    <hr/>
+    <button mat-raised-button>basic-elevated</button>
+    <button mat-raised-button disabled>basic grey</button>
+    <a mat-raised-button href="https://www.google.com/" target="_blank">google</a>
+    <hr/>
+    <button mat-stroked-button>basic-stroked</button>
+    <button mat-stroked-button disabled>stroked grey</button>
+    <a mat-stroked-button href="https://www.google.com/" target="_blank">google</a>
+</div>
