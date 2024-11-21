@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+import { ProductService, Product } from '../services/product.service';
+
 
 interface Setting {
   name: String
@@ -24,11 +27,13 @@ class CourseSetting implements Setting {
 @Component({
   selector: 'app-structural-directives',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './structural-directives.component.html',
   styleUrl: './structural-directives.component.css'
 })
-export class StructuralDirectivesComponent {
+export class StructuralDirectivesComponent implements OnInit {
+  products: Product[] = []
+  
   isAdmin: Boolean = true;
   settings: Setting[] = [
     new ClassroomSetting("add student"),
@@ -36,4 +41,15 @@ export class StructuralDirectivesComponent {
     new CourseSetting("add course"),
     new CourseSetting("update course"),
   ];
+
+  constructor(private productService: ProductService) {
+  }
+
+  ngOnInit(): void {
+    this.loadProducts()
+  }
+
+  loadProducts() {
+    this.products = this.productService.getProducts()
+  }
 }
